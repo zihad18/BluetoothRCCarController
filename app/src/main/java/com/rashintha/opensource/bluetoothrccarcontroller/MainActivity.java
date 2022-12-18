@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ConnectedThread connectedThread;
 
-    private String rcStatus = "n";
+    private String rcStatus = "F";
     Handler bluetoothHandler;
 
     // SPP UUID service
@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        rcStatus = "r";
+                        rcStatus = "F";
                         return  true;
                     case MotionEvent.ACTION_UP:
-                        rcStatus = "n";
+                        rcStatus = "F";
                         return  true;
                 }
                 return false;
@@ -89,10 +89,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        rcStatus = "l";
+                        rcStatus = "L";
                         return  true;
                     case MotionEvent.ACTION_UP:
-                        rcStatus = "n";
+                        rcStatus = "F";
                         return  true;
                 }
                 return false;
@@ -104,10 +104,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        rcStatus = "u";
+                        rcStatus = "F";
                         return  true;
                     case MotionEvent.ACTION_UP:
-                        rcStatus = "n";
+                        rcStatus = "F";
                         return  true;
                 }
                 return false;
@@ -119,10 +119,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        rcStatus = "s";
+                        rcStatus = "S";
                         return  true;
                     case MotionEvent.ACTION_UP:
-                        rcStatus = "n";
+                        rcStatus = "F";
                         return  true;
                 }
                 return false;
@@ -134,10 +134,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        rcStatus = "d";
+                        rcStatus = "B";
                         return  true;
                     case MotionEvent.ACTION_UP:
-                        rcStatus = "n";
+                        rcStatus = "F";
                         return  true;
                 }
                 return false;
